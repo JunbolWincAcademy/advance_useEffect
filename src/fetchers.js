@@ -8,19 +8,19 @@ export const fetchPeople = async () => {
   return [
     {
       id: 1,
-      name: "John",
+      name: 'John',
     },
     {
       id: 2,
-      name: "Jane",
+      name: 'Jane',
     },
     {
       id: 3,
-      name: "Bob",
+      name: 'Bob',
     },
     {
       id: 4,
-      name: "Alice",
+      name: 'Alice',
     },
   ];
 };
@@ -31,27 +31,27 @@ export const fetchPerson = async (id) => {
     ? [
         {
           id: 1,
-          name: "John",
+          name: 'John',
           age: 42,
-          hobbies: ["Witchcraft", "Magick", "Tarot"],
+          hobbies: ['Witchcraft', 'Magick', 'Tarot'],
         },
         {
           id: 2,
-          name: "Jane",
+          name: 'Jane',
           age: 74,
-          hobbies: ["Bungy Jumping", "Knitting"],
+          hobbies: ['Bungy Jumping', 'Knitting'],
         },
         {
           id: 3,
-          name: "Bob",
+          name: 'Bob',
           age: 18,
-          hobbies: ["Cow herding", "Training dogs"],
+          hobbies: ['Cow herding', 'Training dogs'],
         },
         {
           id: 4,
-          name: "Alice",
+          name: 'Alice',
           age: 28,
-          hobbies: ["Gardening", "Playing the Banjo"],
+          hobbies: ['Gardening', 'Playing the Banjo'],
         },
       ].find((p) => p.id === id)
     : null;
